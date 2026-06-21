@@ -19,7 +19,7 @@ export async function runMarketResearchAgent(
   idea: string
 ): Promise<MarketResearchOutput> {
   const model = new ChatGoogleGenerativeAI({
-    model: "gemini-1.5-flash",
+    model: "gemini-3.1-flash-lite",
     apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
     temperature: 0.6,
   });

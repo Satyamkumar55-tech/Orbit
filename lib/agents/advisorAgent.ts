@@ -17,7 +17,7 @@ import { buildAdvisorPrompt } from "@/lib/prompts/advisorPrompt";
  */
 export async function runAdvisorAgent(idea: string): Promise<AdvisorOutput> {
   const model = new ChatGoogleGenerativeAI({
-    model: "gemini-1.5-flash",
+    model: "gemini-3.1-flash-lite",
     apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
     temperature: 0.7,
   });
