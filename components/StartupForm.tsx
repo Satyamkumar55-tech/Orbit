@@ -204,7 +204,7 @@ export default function StartupForm() {
               id="analyze-button"
               className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 ${
                 isValid
-                  ? "bg-gradient-to-r from-violet-600 to-indigo-600 text-white hover:from-violet-500 hover:to-indigo-500 shadow-lg shadow-violet-600/40 hover:shadow-violet-500/60 hover:scale-105 active:scale-95"
+                  ? "bg-linear-to-r from-violet-600 to-indigo-600 text-white hover:from-violet-500 hover:to-indigo-500 shadow-lg shadow-violet-600/40 hover:shadow-violet-500/60 hover:scale-105 active:scale-95"
                   : "bg-white/5 text-gray-600 cursor-not-allowed"
               }`}
             >
