@@ -1,48 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Orbit – AI-Powered Startup Discovery & Evaluation Platform
 
-## Getting Started
+Orbit is an AI-powered platform designed to help users discover, analyze, and evaluate startup ideas using intelligent agents and real-time data processing.
 
-First, run the development server:
+The platform leverages multiple AI agents to research startups, generate insights, evaluate opportunities, and assist users in making informed business decisions.
+
+---
+
+## 🌟 Features
+
+### 🤖 Multi-Agent Architecture
+- Advisor Agent for startup recommendations
+- Research Agent for market analysis
+- Evaluation Agent for startup scoring
+- Specialized AI workflows for intelligent decision-making
+
+### 📊 Startup Analysis
+- Startup idea evaluation
+- Market opportunity assessment
+- Business model analysis
+- Risk and growth potential insights
+
+### 🔍 Research & Intelligence
+- Automated startup research
+- Data-driven recommendations
+- AI-generated insights
+- Structured evaluation reports
+
+### 🎨 Modern User Experience
+- Responsive UI built with Next.js
+- Fast and interactive dashboard
+- Clean and intuitive user interface
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+Orbit
+│
+├── app/                # Next.js App Router pages
+├── components/         # Reusable UI components
+├── lib/
+│   ├── agents/         # AI Agents
+│   ├── database/       # Database utilities
+│   ├── services/       # Business logic
+│   └── utils/          # Helper functions
+├── models/             # Database models
+├── public/             # Static assets
+├── types/              # TypeScript definitions
+└── README.md
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend
+- Next.js API Routes
+- Node.js
+
+### Database
+- MongoDB
+- Mongoose
+
+### AI & Automation
+- AI Agents
+- Prompt Engineering
+- Intelligent Startup Evaluation Workflows
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Satyamkumar55-tech/Orbit.git
+cd Orbit
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+Add any additional API keys required by the AI agents.
+
+---
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🗄️ MongoDB Setup
 
-To learn more about Next.js, take a look at the following resources:
+Make sure:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- MongoDB Atlas cluster is running
+- Your IP address is whitelisted
+- `MONGODB_URI` is correctly configured
+- Database user credentials are valid
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Example:
 
-## Deploy on Vercel
+```env
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/orbit
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Future Enhancements
 
-## Troubleshooting MongoDB
+- Startup funding analysis
+- Competitor intelligence dashboard
+- AI-powered pitch deck generation
+- Investor matching system
+- Real-time market trend tracking
+- Startup success prediction models
 
-If you see a connection error like `ECONNREFUSED` or `MongoDB connection failed` when calling the API (`/api/startup`), check the following:
+---
 
-- Ensure the `MONGODB_URI` environment variable is set in `..env.local` (or `.env.local`) at the project root and points to a valid MongoDB Atlas URI or local MongoDB instance.
-- If using MongoDB Atlas, confirm your cluster is running and your IP address is allowed in the Network Access (IP whitelist).
-- Make sure your network allows outbound connections to MongoDB Atlas (`mongodb.net`) on the required ports.
-- For local development, you can run a local MongoDB (e.g., using `mongod` or Docker) and set `MONGODB_URI=mongodb://localhost:27017/your-db-name`.
-- After updating `.env.local`, restart the Next.js dev server so environment variables are reloaded.
+## 🤝 Contributors
 
-If the issue persists, run the API route locally and inspect server logs for the exact error message.
+- Anushka Bhosale
+- Pranet Solkar
+- SatyamKumar
+
+Contributions, suggestions, and improvements are welcome.
+
+---
+
+If you find this project useful, consider giving it a star on GitHub.
+
+**Built with ❤️ using Next.js, TypeScript, MongoDB, and AI Agents.**
